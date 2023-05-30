@@ -1,0 +1,179 @@
+.snav {
+  width: 115px;
+  margin-top: 0;
+}
+.cartbox {
+  width: 100%;
+  // height: 1000px;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  .shoptb {
+    width: 1240px;
+    // height: 500px;
+    // background-color: #f2f2f2;
+    margin: 20px auto;
+    .carlist {
+      margin: 0 auto;
+      // height: 500px;
+      width: 1020px;
+      // background-color: red;
+      // display: block;
+    }
+  }
+}
+.tables {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: rgba(51, 51, 51, 1);
+  font-size: 14px;
+  text-align: center;
+  width: 1020px;
+  background-color: #f2f2f2;
+}
+thead {
+  width: 1024px;
+  height: 100px;
+  background: white;
+  font-weight: 700;
+  tr {
+    height: 50px;
+    td {
+      border: none;
+    }
+    &:nth-child(2) {
+      background: #f2f2f2;
+      border-top: 2px solid #f2f2f2;
+      border-bottom: 1px solid #f2f2f2;
+      text-align: left;
+      text-indent: 20px;
+    }
+  }
+}
+.td1 {
+  width: 50px;
+  .checkedbox {
+    display: block;
+    span {
+      line-height: 50px;
+      font-weight: 700;
+    }
+  }
+}
+tbody {
+  border-bottom: 1px solid #f2f2f2;
+  tr {
+    width: 100%;
+    height: 106px;
+    background-color: white;
+  }
+  .dxk-check {
+    width: 62px;
+    text-align: center;
+  }
+  .td2 {
+    width: 350px;
+    .shopimg {
+      display: flex;
+      justify-content: flex-start;
+      flex-shrink: 1;
+
+      img {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        height: 68px;
+        width: 68px;
+        margin-right: 10px;
+      }
+      a {
+        color: #333;
+      }
+    }
+  }
+  .td5 {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    .shop-num {
+      border: 1px solid rgba(221, 221, 221, 1);
+      height: 20px;
+      width: 96px;
+      display: flex;
+      justify-content: space-around;
+      > a {
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        width: 20px;
+      }
+      .inpbox {
+        border: 1px solid rgba(221, 221, 221, 1);
+        outline: none;
+        vertical-align: top;
+        width: 35px;
+        text-align: center;
+      }
+    }
+  }
+
+  .td7 {
+    width: 100px;
+    cursor: pointer;
+  }
+}
+.bottom-box {
+  width: 100%;
+  position: relative;
+  height: 70px;
+  background-color: white;
+  margin-top: 15px;
+  display: flex;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  .bt-td1 {
+    line-height: 70px;
+  }
+  .shop-sp {
+    margin-left: 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+
+  .heji {
+    position: absolute;
+    right: 260px;
+    text-align: right;
+    top: 15px;
+    > p {
+      font-size: 16px;
+      color: #333;
+      b {
+        font-size: 14px;
+        color: #f33;
+      }
+    }
+    .p-yh {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+  .shop-btn {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 51, 51, 1) 0,
+      rgba(255, 102, 51, 1) 100%
+    );
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 160px;
+  }
+}

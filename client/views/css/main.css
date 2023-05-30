@@ -1,0 +1,245 @@
+main {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+.item {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+}
+.item > li {
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 5px;
+}
+.item > li > a {
+  display: block;
+  padding: 5px 5px;
+  color: #666;
+  text-align: center;
+  transition: 0.3s;
+}
+.item > li:hover a {
+  color: #dd0e00;
+  font-weight: bolder;
+  transform: translateX(2px);
+}
+.call-box {
+  width: 40px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.call-box .iconfont {
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+.call-box > .phone {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.call-box > .erweima {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title {
+  line-height: 24px;
+  padding: 10px 0;
+  color: #333;
+}
+.title > span {
+  font-size: 20px;
+  line-height: 20px;
+}
+.title > a {
+  color: #666;
+  font-size: 14px;
+}
+.main-box {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.tu-box {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.a-box {
+  display: block;
+  width: 280px;
+  height: 242px;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+.a-box > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: transform, 0.3s;
+}
+.a-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 10px 10px #a09e9e83;
+}
+.fl-box {
+  display: block;
+  margin-top: 15px;
+}
+.fl-box > img {
+  width: 100%;
+}
+section {
+  height: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+section > .sec-box {
+  width: 280px;
+  height: 460px;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: transform, 0.3s;
+}
+section > .sec-box > span {
+  padding: 0 25px;
+  color: #fff;
+  font-size: 16px;
+}
+section > .sec-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 10px 10px rgba(201, 199, 199, 0.534);
+}
+section > .sec-box img {
+  width: 240px;
+  height: 240px;
+  border-radius: 5px;
+}
+section > .sec-box p {
+  width: 100%;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section > .sec-box p > span {
+  font-size: 14px;
+  color: #999;
+}
+section > .sec-box p:nth-of-type(1) {
+  font-size: 18px;
+  margin-top: 30px;
+  line-height: 25px;
+  color: #333;
+}
+section > .sec-box p:nth-of-type(2) {
+  font-size: 14px;
+  color: #999;
+}
+section > .sec-box p:nth-of-type(3) {
+  font-size: 20px;
+  color: #dd0e00;
+  margin-top: 10px;
+}
+.sec-box:nth-child(1) {
+  padding: 0;
+  width: 583px;
+  height: 400px;
+}
+.sec-box:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+.more-box {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  /* flex-wrap: wrap; */
+
+
+  
+
+}
+.more-box > .sm-box {
+  width: 180px;
+  height: 305px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  transition: transform, 0.3s;
+  flex-direction: row;
+
+}
+.more-box > .sm-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 10px 10px rgba(201, 199, 199, 0.534);
+}
+.more-box > .sm-box img {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+}
+.more-box > .sm-box p {
+  width: 100%;
+  text-align: center;
+}
+.more-box > .sm-box p:nth-of-type(1) {
+  height: 40px;
+  font-size: 14px;
+  margin-top: 25px;
+  color: #333;
+}
+.more-box > .sm-box p:nth-of-type(2) {
+  line-height: 50px;
+  font-size: 20px;
+  color: #dd0e00;
+  margin-top: 10px;
+}
+.more-box > .sm-box p:nth-of-type(3) {
+  width: 50px;
+  color: #f17f38;
+  line-height: 15px;
+  border: 1px solid #f17f38;
+  margin: 0 auto;
+}
+.di-text {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 35px;
+  position: relative;
+}
+.di-text::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #666;
+  position: absolute;
+  bottom: 50%;
+  left: 34%;
+}
+.di-text::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #666;
+  position: absolute;
+  bottom: 50%;
+  right: 34%;
+}

@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  .nav {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    position: fixed;
+    z-index: 10000;
+    .top-nav {
+      height: 40px;
+      margin: 0 auto;
+    }
+  }
+}
+.nav-right {
+  float: right;
+  > li {
+    list-style: none;
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    > a {
+      text-decoration: none;
+      color: #fff;
+      margin-right: 25px;
+    }
+  }
+}
+// 360图标导航
+.big-nav {
+  height: 100px;
+  padding-top: 40px;
+  overflow: hidden;
+  .box-left {
+    float: left;
+  }
+  > ul {
+    list-style: none;
+    line-height: 100px;
+    text-align: center;
+    > li {
+      float: left;
+      > img {
+        width: 180px;
+        height: 33px;
+        margin-right: 50px;
+      }
+      > a {
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+.box-right {
+  float: right;
+  margin-top: 30px;
+  > .search {
+    width: 430px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 23px;
+    position: relative;
+    > .inp {
+      width: 360px;
+      height: 26px;
+      border: none;
+      line-height: 30px;
+      position: absolute;
+      outline: none;
+      top: 5px;
+      left: 15px;
+    }
+    > .s-icon {
+      width: 20px;
+      height: 20px;
+      float: right;
+      position: absolute;
+      font-size: 22px;
+      top: 5px;
+      right: 20px;
+    }
+  }
+  > .s-list {
+    overflow: hidden;
+    list-style: none;
+    margin-left: 20px;
+    > li {
+      float: left;
+      list-style: none;
+      padding: 4px 8px;
+      > a {
+        text-decoration: none;
+        color: #666;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.nav-left {
+  float: left;
+  > li {
+    list-style: none;
+    float: left;
+    > a {
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      font-size: 12px;
+      margin-right: 28px;
+    }
+  }
+}
+// 轮播图
+.banner {
+  width: 100%;
+  height: 530px;
+  position: relative;
+  > a {
+    display: block;
+    width: 100%;
+    height: 530px;
+    position: absolute;
+  }
+  > a:nth-of-type(1) {
+    background: url("/client/img/banner1.webp") center
+      top;
+  }
+  > a:nth-of-type(2) {
+    background: url("/client/img/banner2.webp") center
+      top;
+  }
+  > a:nth-of-type(3) {
+    background: url("/client/img/banner3.webp") center
+      top;
+  }
+  > a:nth-of-type(4) {
+    background: url("/client/img/banner.w4ebp") center
+      top;
+  }
+}
+.sp {
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  > .iconfont {
+    width: 30px;
+    height: 30px;
+    font-size: 2.5rem;
+    color: rgba(153, 153, 153, 0.3);
+    text-align: center;
+  }
+  &:hover {
+    .iconfont {
+      color: #f0f0f088;
+    }
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.prev {
+  position: absolute;
+  top: 40%;
+  left: 312px;
+}
+.next {
+  position: absolute;
+  top: 40%;
+  right: 100px;
+}
+.yuan {
+  // width: 100px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  z-index: 1;
+
+  > .show {
+    background-color: #ccc;
+    border: 2px solid rgba(0, 0, 0, 1);
+  }
+  > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    float: left;
+    margin: 10px;
+    &:hover {
+      border: 2px solid rgba(0, 0, 0, 1);
+    }
+    .dian_show {
+      opacity: 1;
+    }
+  }
+}
+.erji-nav {
+  width: 230px;
+  height: 530px;
+  // background-color: rgba(0, 0, 0, 0.301);
+  position: absolute;
+  left: 85px;
+  > .b-all {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 50px;
+    > a {
+      color: #fff;
+      display: block;
+      font-size: 16px;
+    }
+  }
+}
+.b-list {
+  height: 480px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  > li {
+    text-align: center;
+    width: 230px;
+    line-height: 48px;
+
+    > a {
+      font-size: 14px;
+      color: #fff;
+    }
+  }
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    .list-box {
+      display: block;
+    }
+  }
+  .list-box {
+    width: 950px;
+    height: 530px;
+    background-color: rgba(255, 255, 255, 0.98);
+    position: absolute;
+    top: 0;
+    left: 230px;
+    text-align: left;
+    display: none;
+    z-index: 2;
+    > a {
+      display: inline-block;
+      width: 110px;
+      height: 65px;
+      margin-left: 50px;
+      font-size: 14px;
+      > img {
+        height: 100%;
+      }
+    }
+    :hover {
+      color: #999;
+    }
+  }
+}

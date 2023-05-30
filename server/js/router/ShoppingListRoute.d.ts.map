@@ -1,0 +1,1 @@
+{"version":3,"file":"ShoppingListRoute.d.ts","sourceRoot":"","sources":["../../ts/router/ShoppingListRoute.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,MAAM,CAAC;AACtC,OAAO,EAAE,cAAc,EAAE,MAAM,gBAAgB,CAAC;AAIhD,MAAM,CAAC,OAAO,OAAO,iBAAkB,YAAW,cAAc;IAE/C,IAAI,CAAC,IAAI,EAAE,GAAG,EAAC,GAAG,EAAC,cAAc,GAAG,OAAO,CAAC,IAAI,CAAC;CASjE"}

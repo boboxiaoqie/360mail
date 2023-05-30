@@ -1,0 +1,1 @@
+{"version":3,"file":"GoodsListCommand.d.ts","sourceRoot":"","sources":["../../src/command/GoodsListCommand.ts"],"names":[],"mappings":"AAGA,OAAO,QAAQ,MAAM,0BAA0B,CAAC;AAChD,OAAO,MAAM,MAAM,wBAAwB,CAAC;AAC5C,OAAO,SAAS,MAAM,2BAA2B,CAAC;AAMlD,MAAM,CAAC,OAAO,OAAO,gBAAiB,YAAW,QAAQ;;IAI9C,IAAI,CAAC,IAAI,EAAE,MAAM,EAAE,GAAG,SAAS,EAAE,GAAG,IAAI;IAO/C,OAAO,CAAC,eAAe;CAI1B"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"AddGoodsRoute.d.ts","sourceRoot":"","sources":["../../ts/router/AddGoodsRoute.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,MAAM,CAAC;AACtC,OAAO,EAAE,cAAc,EAAE,MAAM,gBAAgB,CAAC;AAYhD,MAAM,CAAC,OAAO,OAAO,aAAc,YAAW,cAAc;IAE3C,IAAI,CAAC,IAAI,EAAE,GAAG,EAAC,GAAG,EAAC,cAAc,GAAG,OAAO,CAAC,IAAI,CAAC;YAUhD,cAAc;YAUd,WAAW;IAiBzB,OAAO,CAAE,WAAW;CASvB"}

@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/Main.js",
+  "scripts": {
+    "start": "cross-env PORT=4001 nodemon"
+  },
+  "dependencies": {
+    "@types/node":"^18.15.3",
+    "mysql":"^2.18.1",
+    "@types/mysql":"^2.15.21"
+  },
+  "devDependencies": {
+    "nodemon":"^2.0.21",
+    "cross-env":"^7.0.3"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

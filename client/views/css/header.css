@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+}
+header .nav {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  position: fixed;
+  z-index: 10000;
+}
+header .nav .top-nav {
+  height: 40px;
+  margin: 0 auto;
+}
+.nav-right {
+  float: right;
+}
+.nav-right > li {
+  list-style: none;
+  float: left;
+  line-height: 40px;
+  height: 40px;
+}
+.nav-right > li > a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 25px;
+}
+.big-nav {
+  height: 100px;
+  padding-top: 40px;
+  overflow: hidden;
+}
+.big-nav .box-left {
+  float: left;
+}
+.big-nav > ul {
+  list-style: none;
+  line-height: 100px;
+  text-align: center;
+}
+.big-nav > ul > li {
+  float: left;
+}
+.big-nav > ul > li > img {
+  width: 180px;
+  height: 33px;
+  margin-right: 50px;
+}
+.big-nav > ul > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  margin-right: 50px;
+}
+.box-right {
+  float: right;
+  margin-top: 30px;
+}
+.box-right > .search {
+  width: 430px;
+  height: 36px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 23px;
+  position: relative;
+}
+.box-right > .search > .inp {
+  width: 360px;
+  height: 26px;
+  border: none;
+  line-height: 30px;
+  position: absolute;
+  outline: none;
+  top: 5px;
+  left: 15px;
+}
+.box-right > .search > .s-icon {
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: absolute;
+  font-size: 22px;
+  top: 5px;
+  right: 20px;
+}
+.box-right > .s-list {
+  overflow: hidden;
+  list-style: none;
+  margin-left: 20px;
+}
+.box-right > .s-list > li {
+  float: left;
+  list-style: none;
+  padding: 4px 8px;
+}
+.box-right > .s-list > li > a {
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+}
+.nav-left {
+  float: left;
+}
+.nav-left > li {
+  list-style: none;
+  float: left;
+}
+.nav-left > li > a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  margin-right: 28px;
+}
+.banner {
+  width: 100%;
+  height: 530px;
+  position: relative;
+}
+.banner > a {
+  display: block;
+  width: 100%;
+  height: 530px;
+  position: absolute;
+}
+.banner > a:nth-of-type(1) {
+  background: url("/client/img/banner1.webp") center top;
+}
+.banner > a:nth-of-type(2) {
+  background: url("/client/img/banner2.webp") center top;
+}
+.banner > a:nth-of-type(3) {
+  background: url("/client/img/banner3.webp") center top;
+}
+.banner > a:nth-of-type(4) {
+  background: url("/client/img/banner4.webp") center top;
+}
+.sp {
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.sp > .iconfont {
+  width: 30px;
+  height: 30px;
+  font-size: 2.5rem;
+  color: rgba(153, 153, 153, 0.3);
+  text-align: center;
+}
+.sp:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sp:hover .iconfont {
+  color: #f0f0f088;
+}
+.prev {
+  position: absolute;
+  top: 40%;
+  left: 312px;
+}
+.next {
+  position: absolute;
+  top: 40%;
+  right: 100px;
+}
+.yuan {
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  z-index: 1;
+}
+.yuan > .show {
+  background-color: #ccc;
+  border: 2px solid #000000;
+}
+.yuan > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  float: left;
+  margin: 10px;
+}
+.yuan > li:hover {
+  border: 2px solid #000000;
+}
+.yuan > li .dian_show {
+  opacity: 1;
+}
+.erji-nav {
+  width: 230px;
+  height: 530px;
+  position: absolute;
+  left: 85px;
+}
+.erji-nav > .b-all {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  line-height: 50px;
+}
+.erji-nav > .b-all > a {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+}
+.b-list {
+  height: 480px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.b-list > li {
+  text-align: center;
+  width: 230px;
+  line-height: 48px;
+}
+.b-list > li > a {
+  font-size: 14px;
+  color: #fff;
+}
+.b-list li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.b-list li:hover .list-box {
+  display: block;
+}
+.b-list .list-box {
+  width: 950px;
+  height: 530px;
+  background-color: rgba(255, 255, 255, 0.98);
+  position: absolute;
+  top: 0;
+  left: 230px;
+  text-align: left;
+  display: none;
+  z-index: 2;
+}
+.b-list .list-box > a {
+  display: inline-block;
+  width: 110px;
+  height: 65px;
+  margin-left: 50px;
+  font-size: 14px;
+}
+.b-list .list-box > a > img {
+  height: 100%;
+}
+.b-list .list-box :hover {
+  color: #999;
+}

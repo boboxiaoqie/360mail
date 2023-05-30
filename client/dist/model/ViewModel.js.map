@@ -1,0 +1,1 @@
+{"version":3,"file":"ViewModel.js","sourceRoot":"","sources":["../../src/model/ViewModel.ts"],"names":[],"mappings":"AAIA,MAAM,CAAC,OAAO,OAAO,SAAS;IAK1B;IAEA,CAAC;IACM,MAAM,KAAK,QAAQ;QACtB,OAAO,IAAI,CAAC,SAAS,IAAI,CAAC,IAAI,CAAC,SAAS,GAAC,IAAI,SAAS,EAAE,CAAC,CAAA;IAC7D,CAAC;CACJ"}

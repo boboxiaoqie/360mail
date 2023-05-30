@@ -1,0 +1,17 @@
+.lobox {
+  width: 372px;
+  margin: 110px auto;
+  border-radius: 5px;
+  background-color: white;
+}
+.lobox .lobm {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px ;
+}
+.lofuwu {
+  padding: 0px 32px 20px  32px;
+}
+.lofuwu > a {
+  color: #00c89f;
+}

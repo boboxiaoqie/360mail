@@ -1,0 +1,1 @@
+{"version":3,"file":"RemoveGoodsRoute.d.ts","sourceRoot":"","sources":["../../ts/router/RemoveGoodsRoute.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,MAAM,CAAC;AACtC,OAAO,EAAE,cAAc,EAAE,MAAM,gBAAgB,CAAC;AAKhD,MAAM,CAAC,OAAO,OAAO,gBAAiB,YAAW,cAAc;IAE9C,IAAI,CAAC,IAAI,EAAE,GAAG,EAAC,GAAG,EAAC,cAAc,GAAG,OAAO,CAAC,IAAI,CAAC;CAajE"}

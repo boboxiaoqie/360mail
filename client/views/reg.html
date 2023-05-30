@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reg.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
+
+
+</head>
+
+<body>
+  <div class="wrapper reg-nav">
+    <ul class="nav-left">
+      <img src="https://p.ssl.qhimg.com/t01a46c936f9a7ffd94.png" alt="">
+      <div class="xian"></div>
+      <img src="https://p.ssl.qhimg.com/t01b9e6ac529f79e0ae.png" alt="">
+
+    </ul>
+    <div class="nav-right">
+      <ul class="zh">
+        <a href="">帮助中心</a>
+        <a href="">账号申诉</a>
+        <a href="">账号卫士</a>
+      </ul>
+    </div>
+  </div>
+  <div class="p-main">
+    <div class="mask">
+      <div class="mask-tu  ">
+        <img src="https://p.ssl.qhimg.com/t01bb2d30c2c1feaa69.png" alt="">
+      </div>
+      <div class="mask-reg ">
+        <div class=" rbox">
+          <div class="reg-hd">
+            <div class="xhx hd-box"> 手机号注册 </div> <span></span>
+            <div class="ph hd-box"> 邮箱注册</div>
+          </div>
+          <div class="reg-sign">
+            <form action="">
+              <div class="se">
+                <!-- <input type="select" id="select" name="" > -->
+                <input type="tel" id="tel" name="tel" placeholder="手机号" style="width:400px; height: 35px;">
+              </div>
+              <!-- <div class="tel-box"> <input type="tel" id="tel" name="tel" placeholder="验证码">
+                <div class="yzm">验证码</div><span>换一张</span> -->
+              <!-- </div> -->
+              <div class="tel-box num-box"> <input type="number" id="number" name="number" placeholder="短信验证码">
+                <div class="getyzm" >获取验证码</div>
+              </div>
+              <div> <input type="password" id="password" name="password" placeholder="密码(8-12个字符)"></div>
+              <div style="display: flex;">
+                <input type="checkbox" id="checkbox" value="">
+                <p class="fuwu"> 阅读并同意<a href="">360用户服务条款</a>和<a href="">360用户隐私政策</a></p>
+              </div>
+              <div> <input type="submit" value="注册" id="button2" /></div>
+            </form>
+          </div>
+          <div class="bmbox">
+            已有账号？<a href="./login.html">直接登录</a></span>
+          </div>
+
+        </div>
+        <div class="rbox embox">
+          <div class="reg-hd">
+            <div class=" ph hd-box">手机号注册 </div><span></span>
+            <div class=" xhx  hd-box"> 邮箱注册</div>
+          </div>
+          <div class="reg-sign">
+            <form action="">
+              <div class="se">
+                <input type="email" id="email" name="email" placeholder="邮箱">
+              </div>
+              <div> <input type="password" id="password" name="password" placeholder="密码(8-12个字符)"></div>
+              <div style="display: flex;">
+                <input type="checkbox" id="checkbox" value="">
+                <p class="fuwu"> 阅读并同意<a href="">360用户服务条款</a>和<a href="">360用户隐私政策</a></p>
+              </div>
+              <div> <input type="submit" value="注册" id="button" /></div>
+            </form>
+          </div>
+          <div class="bmbox">
+            已有账号？<a href="./login.html">直接登录</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-footer">
+    <p>Copyright©2005 <span>2021</span> 360.CN All Rights Reserved 360安全中心 </p>
+    <p><img src="" alt="">
+      <a href="">京ICP证080047号[京ICP备08010314号-6] </a>
+      <a href="">京公网安备 11000002000006号</a>
+    </p>
+  </div>
+
+
+  <script type="module">
+    import Utils from "./js/Utils.js";
+    import AJAX from "./js/AJAX.js";
+
+   var form;
+    init();
+    function init(){
+        form=document.querySelector("form");
+        Utils.addFormListener(form,listHandler);
+    }
+
+    async function listHandler(list){
+      var result=await AJAX.post(list,AJAX.REG);
+      result=JSON.parse(result);
+        if(!result.err){
+            alert(result.msg);
+            location.href="../views/login.html";
+        }else{
+            alert(result.msg);
+        }
+    }
+    </script>
+</body>
+
+
+</html>
